@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>References | Creative Curriculum</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  
+  <!-- Animate.css -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+  
+  <style>
+    body { 
+      font-family: 'Segoe UI', sans-serif; 
+      background: #f7f9fc; 
+      display: flex; 
+      flex-direction: column; 
+      min-height: 100vh; 
+    }
+    
+    /* Navbar Gradient Background */
+    .bg-gradient-primary {
+      background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+    }
+
+    /* References container styling */
+    .references-container {
+      max-width: 900px;
+      margin: 3rem auto 5rem auto;
+      padding: 2rem 2.5rem;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      border-radius: 15px;
+      color: #f0f0f0;
+      box-shadow: 0 8px 24px rgba(37, 117, 252, 0.5);
+    }
+    
+    .references-container h3 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #fffbf7;
+      text-shadow: 1.5px 1.5px 4px rgba(0,0,0,0.4);
+    }
+    
+    ul.references-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    ul.references-list li {
+      background: rgba(255, 255, 255, 0.12);
+      margin-bottom: 1.2rem;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.5s forwards;
+    }
+    
+    /* Staggered animation delays for list items */
+    ul.references-list li:nth-child(1) { animation-delay: 0.1s; }
+    ul.references-list li:nth-child(2) { animation-delay: 0.25s; }
+    ul.references-list li:nth-child(3) { animation-delay: 0.4s; }
+    ul.references-list li:nth-child(4) { animation-delay: 0.55s; }
+    ul.references-list li:nth-child(5) { animation-delay: 0.7s; }
+    ul.references-list li:nth-child(6) { animation-delay: 0.85s; }
+    ul.references-list li:nth-child(7) { animation-delay: 1s; }
+    ul.references-list li:nth-child(8) { animation-delay: 1.15s; }
+    ul.references-list li:nth-child(9) { animation-delay: 1.3s; }
+    ul.references-list li:nth-child(10) { animation-delay: 1.45s; }
+    
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    /* Link styling */
+    ul.references-list li a {
+      color: #ffea00;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+    
+    ul.references-list li a:hover,
+    ul.references-list li a:focus {
+      color: #fff;
+      text-shadow: 0 0 8px #ffea00;
+    }
+    
+    /* Responsive */
+    @media (max-width: 600px) {
+      .references-container {
+        padding: 1.2rem 1.5rem;
+      }
+      
+      .references-container h3 {
+        font-size: 2rem;
+      }
+      
+      ul.references-list li {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-gradient-primary sticky-top animate__animated animate__fadeInDown shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Creative Curriculum</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="art.html">Art</a></li>
+        <li class="nav-item"><a class="nav-link" href="drama.html">Drama</a></li>
+        <li class="nav-item"><a class="nav-link" href="movement.html">Movement</a></li>
+        <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+        <li class="nav-item"><a class="nav-link" href="language.html">Language</a></li>
+        <li class="nav-item"><a class="nav-link" href="math.html">Math</a></li>
+        <li class="nav-item"><a class="nav-link" href="humanities.html">Humanities</a></li>
+        <li class="nav-item"><a class="nav-link" href="tech.html">Technology</a></li>
+        <li class="nav-item"><a class="nav-link" href="science.html">Science</a></li>
+        <li class="nav-item"><a class="nav-link" href="integrated.html">Integrated</a></li>
+        <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="references.html">References</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- References Section -->
+<section class="references-container animate__animated animate__fadeInUp">
+  <h3>References</h3>
+  <ul class="references-list">
+   <li>10 Ways to Spark Your Child’s Interest in STEM. (2022, September 28). TalkingParents; Monitored Communications LLC. <a href="https://talkingparents.com/blog/child-interest-in-stem" target="_blank" rel="noopener noreferrer">https://talkingparents.com/blog/child-interest-in-stem</a></li>
+<li>Bing. (2025). Bing. <a href="https://www.bing.com/images/search?view=detailV2&insightstoken=bcid_RPAHi3cUA6AIK8BinJ-bb6Y9UnSFnuBuKvw" target="_blank" rel="noopener noreferrer">https://www.bing.com/images/search?view=detailV2&insightstoken=bcid_RPAHi3cUA6AIK8BinJ-bb6Y9UnSFnuBuKvw</a></li>
+<li>enspirement.co - Expressive Arts: Meaningful ways to support the creative power of children. (n.d.). Www.enspirement.co. <a href="https://www.enspirement.co/nz/discover/article/meaningful-ways-to-support-the-creative-power-of-children" target="_blank" rel="noopener noreferrer">https://www.enspirement.co/nz/discover/article/meaningful-ways-to-support-the-creative-power-of-children</a></li>
+<li>Guest User. (2024, March 21). École M. École M . <a href="https://en.ecolem.fr/blog/art-outil-expression-emotionnelle-enfants-bas-age" target="_blank" rel="noopener noreferrer">https://en.ecolem.fr/blog/art-outil-expression-emotionnelle-enfants-bas-age</a></li>
+<li>Hargraves, V. (2021, July 14). What role should teachers take in children’s visual arts experiences? THE EDUCATION HUB. <a href="https://theeducationhub.org.nz/what-role-should-teachers-take-in-childrens-visual-arts-experiences/" target="_blank" rel="noopener noreferrer">https://theeducationhub.org.nz/what-role-should-teachers-take-in-childrens-visual-arts-experiences/</a></li>
+<li>Lysenko, B. (2023, December 16). Kids and the Beat: The Benefits of Music Education in Early Childhood. Kids’ MusicRound. <a href="https://kidsmusicround.com/kids-and-the-beat-the-benefits-of-music-education-in-early-childhood/" target="_blank" rel="noopener noreferrer">https://kidsmusicround.com/kids-and-the-beat-the-benefits-of-music-education-in-early-childhood/</a></li>
+<li>McLeod, S. (2025). Vygotsky’s sociocultural theory of cognitive development. Simply Psychology. <a href="https://www.simplypsychology.org/vygotsky.html" target="_blank" rel="noopener noreferrer">https://www.simplypsychology.org/vygotsky.html</a></li>
+<li>Reggio Emilia Approach: Transforming Early Childhood Education through Creativity. (2025, June 5). Premium Furniture for Daycare. <a href="https://westshorefurniture.com/reggio-emilia-approach/" target="_blank" rel="noopener noreferrer">https://westshorefurniture.com/reggio-emilia-approach/</a></li>
+<li>rienewsite. (2023, April 24). Lev Vygotsky: How Relationships Shape Learning - Resources for Infant Educarers®. Resources for Infant Educarers® -. <a href="https://rie.org/lev-vygotsky-how-relationships-shape-our-lear/?gad_source=1&gad_campaignid=21987603514&gbraid=0AAAAADhns1nP5P5exPoNHOoRKvIuOYDvj&gclid=CjwKCAjwvO7CBhAqEiwA9q2YJfyRwW8DulVLpVslEcoKzEqzmr1R5kkoIwBeYTEZ-B_WED1c-76MRhoCo64QAvD_BwE" target="_blank" rel="noopener noreferrer">https://rie.org/lev-vygotsky-how-relationships-shape-our-lear/</a></li>
+<li>(2024). Reynolds.edu. <a href="https://www.reynolds.edu/programs/program-images/humanities-and-social-sciences/early-childhood-development-c_highlight2.jpg" target="_blank" rel="noopener noreferrer">https://www.reynolds.edu/programs/program-images/humanities-and-social-sciences/early-childhood-development-c_highlight2.jpg</a></li>
+<li>(2025a). Bing.net. <a href="https://tse1.mm.bing.net/th/id/OIP.MQy_gdIM6Hpw3HpboAPQaAHaHa?w=750&h=750&rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3" target="_blank" rel="noopener noreferrer">https://tse1.mm.bing.net/th/id/OIP.MQy_gdIM6Hpw3HpboAPQaAHaHa?w=750&h=750&rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3</a></li>
+<li>(2025b). Shutterstock.com. <a href="https://image.shutterstock.com/image-photo/cute-little-preschool-children-drawing-260nw-187623254.jpg" target="_blank" rel="noopener noreferrer">https://image.shutterstock.com/image-photo/cute-little-preschool-children-drawing-260nw-187623254.jpg</a></li>
+<li>(2025c). Bing.com. <a href="https://th.bing.com/th/id/R.840e11b9c87e0ae1d401ffabc6bc1a2b?rik=MREH2UQ54j0fvg&riu=http%3a%2f%2fdillydallyfarmingdale.com%2fwp-content%2fuploads%2f2016%2f01%2fpre-k-teacher-2.jpg&ehk=%2fm3EyLk0%2fI347qrLVIms12TNezw1XauCDisVCBWIpXE%3d&risl=&pid=ImgRaw&r=0" target="_blank" rel="noopener noreferrer">https://th.bing.com/th/id/R.840e11b9c87e0ae1d401ffabc6bc1a2b</a></li>
+<li>(2025d). Bing.net. <a href="https://tse2.mm.bing.net/th/id/OIP.Qq9Q_FZG3YD6WUQ3SDFo1AHaFj?w=1200&h=900&rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3" target="_blank" rel="noopener noreferrer">https://tse2.mm.bing.net/th/id/OIP.Qq9Q_FZG3YD6WUQ3SDFo1AHaFj?w=1200&h=900&rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3</a></li>
+<li>(2025e). Choosetherightschool.com. <a href="https://choosetherightschool.com/wp-content/uploads/2023/05/What-Is-Steiner-Waldorf-1024x555.png" target="_blank" rel="noopener noreferrer">https://choosetherightschool.com/wp-content/uploads/2023/05/What-Is-Steiner-Waldorf-1024x555.png</a></li>
+<li>(2025f). Bing.net. <a href="https://tse2.mm.bing.net/th/id/OIP.UfeQMBmFBBfoT1AXvsra6QHaE8?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3" target="_blank" rel="noopener noreferrer">https://tse2.mm.bing.net/th/id/OIP.UfeQMBmFBBfoT1AXvsra6QHaE8?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3</a></li>
+<li>(2025g). Bing.net. <a href="https://tse4.mm.bing.net/th/id/OIP.rAorHBIgt1YnZSyIsrHYMAHaE8?w=1024&h=683&rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3" target="_blank" rel="noopener noreferrer">https://tse4.mm.bing.net/th/id/OIP.rAorHBIgt1YnZSyIsrHYMAHaE8?w=1024&h=683&rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3</a></li>
+  </ul>
+</section>
+
+<!-- Footer -->
+<footer class="text-white text-center bg-dark py-4 mt-auto animate__animated animate__fadeInUp">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 Creative Curriculum</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+</body>
+</html>
